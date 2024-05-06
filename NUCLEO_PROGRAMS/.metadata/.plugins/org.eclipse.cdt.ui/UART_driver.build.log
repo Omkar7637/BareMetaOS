@@ -1,0 +1,2 @@
+15:10:54 **** Incremental Build of configuration Debug for project UART_driver ****
+make -j16 all 

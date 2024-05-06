@@ -1,0 +1,34 @@
+21:38:34 **** Incremental Build of configuration Debug for project Round_robin ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/osKernel.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/osKernel.d" -MT"Src/osKernel.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/osKernel.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+In file included from ../Src/main.c:1:
+../Inc/led.h:4:10: fatal error: stm32f446xx.h: No such file or directory
+    4 | #include "stm32f446xx.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Src/led.c:1:
+../Inc/led.h:4:10: fatal error: stm32f446xx.h: No such file or directory
+    4 | #include "stm32f446xx.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:34: Src/main.o] Error 1
+In file included from ../Src/osKernel.c:1:
+../Inc/osKernel.h:4:10: fatal error: stm32f446xx.h: No such file or directory
+    4 | #include "stm32f446xx.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** Waiting for unfinished jobs....
+make: *** [Src/subdir.mk:34: Src/led.o] Error 1
+make: *** [Src/subdir.mk:34: Src/osKernel.o] Error 1
+../Src/uart.c:3:10: fatal error: stm32f446xx.h: No such file or directory
+    3 | #include "stm32f446xx.h"
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:34: Src/uart.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+
+21:38:34 Build Failed. 9 errors, 0 warnings. (took 342ms)
+

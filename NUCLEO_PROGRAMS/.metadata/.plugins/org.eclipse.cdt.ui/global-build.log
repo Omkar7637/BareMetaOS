@@ -1,0 +1,53 @@
+21:43:25 **** Incremental Build of configuration Debug for project Round_robin_ ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I..//Chip_headers/Device -I..//Chip_headers/Device/ST/STM32F4xx/Include/ -I/home/om/Desktop/NUCLEO_S/Chip_headers/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/led.d" -MT"Src/led.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/led.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I..//Chip_headers/Device -I..//Chip_headers/Device/ST/STM32F4xx/Include/ -I/home/om/Desktop/NUCLEO_S/Chip_headers/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/osKernel.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I..//Chip_headers/Device -I..//Chip_headers/Device/ST/STM32F4xx/Include/ -I/home/om/Desktop/NUCLEO_S/Chip_headers/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/osKernel.d" -MT"Src/osKernel.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/osKernel.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I..//Chip_headers/Device -I..//Chip_headers/Device/ST/STM32F4xx/Include/ -I/home/om/Desktop/NUCLEO_S/Chip_headers/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I..//Chip_headers/Device -I..//Chip_headers/Device/ST/STM32F4xx/Include/ -I/home/om/Desktop/NUCLEO_S/Chip_headers/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Src/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I..//Chip_headers/Device -I..//Chip_headers/Device/ST/STM32F4xx/Include/ -I/home/om/Desktop/NUCLEO_S/Chip_headers/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/uart.d" -MT"Src/uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/uart.o"
+arm-none-eabi-gcc -o "Round_robin_.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/om/Desktop/NUCLEO_S/STM32-BareMetalOS-Crafting-from-Scratch/NUCLEO_PROGRAMS/Round_robin_/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Round_robin_.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Round_robin_.elf
+ 
+arm-none-eabi-size  Round_robin_.elf 
+arm-none-eabi-objdump -h -S Round_robin_.elf  > "Round_robin_.list"
+   text	   data	    bss	    dec	    hex	filename
+   6208	     92	   6748	  13048	   32f8	Round_robin_.elf
+Finished building: default.size.stdout
+ 
+Finished building: Round_robin_.list
+ 
+21:45:34 **** Incremental Build of configuration Debug for project Round_robin_ ****
+make -j16 all 
+arm-none-eabi-gcc -o "Round_robin_.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/om/Desktop/NUCLEO_S/STM32-BareMetalOS-Crafting-from-Scratch/NUCLEO_PROGRAMS/Round_robin_/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Round_robin_.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Round_robin_.elf
+ 
+arm-none-eabi-size  Round_robin_.elf 
+arm-none-eabi-objdump -h -S Round_robin_.elf  > "Round_robin_.list"
+   text	   data	    bss	    dec	    hex	filename
+   6208	     92	   6748	  13048	   32f8	Round_robin_.elf
+Finished building: default.size.stdout
+ 
+Finished building: Round_robin_.list
+ 
+21:48:40 **** Incremental Build of configuration Debug for project Round_robin_ ****
+make -j16 all 
+arm-none-eabi-size  Round_robin_.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6208	     92	   6748	  13048	   32f8	Round_robin_.elf
+Finished building: default.size.stdout
+ 
+21:49:08 **** Incremental Build of configuration Debug for project Round_robin_ ****
+make -j16 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I..//Chip_headers/Device -I..//Chip_headers/Device/ST/STM32F4xx/Include/ -I/home/om/Desktop/NUCLEO_S/Chip_headers/Device/ST/STM32F4xx/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "Round_robin_.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/om/Desktop/NUCLEO_S/STM32-BareMetalOS-Crafting-from-Scratch/NUCLEO_PROGRAMS/Round_robin_/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Round_robin_.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Round_robin_.elf
+ 
+arm-none-eabi-size  Round_robin_.elf 
+arm-none-eabi-objdump -h -S Round_robin_.elf  > "Round_robin_.list"
+   text	   data	    bss	    dec	    hex	filename
+   1856	      0	   6408	   8264	   2048	Round_robin_.elf
+Finished building: default.size.stdout
+ 
+Finished building: Round_robin_.list
+ 
